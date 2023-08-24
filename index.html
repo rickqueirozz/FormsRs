@@ -23,7 +23,7 @@
     <form action="https://api.sheetmonkey.io/form/mqa61hHdNSLmsCY1UBZbCU" method="post" id="form" class="form">
       <div class="form-grupo">
         <label for="RE">RE:</label>
-        <input type="text" id="RE" placeholder="Digite seu RE" maxlength="6" name="RE"/>
+        <input type="number" id="RE" placeholder="Digite seu RE" min="0" max="999999" maxlength="6" oninput="checkInputValidity(this)" name="RE"/>
       </div>
       
       <div class="form-grupo">

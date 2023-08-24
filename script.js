@@ -10,3 +10,11 @@ function obterDataHoraAtual() {
 
 document.getElementById('dataHora').value = obterDataHoraAtual();
 
+function checkInputValidity(input) {
+  const value = input.valueAsNumber;
+  if (value > 999999) {
+    input.setCustomValidity("Digite no máximo 6 dígitos.");
+  } else {
+    input.setCustomValidity("");
+  }
+}
