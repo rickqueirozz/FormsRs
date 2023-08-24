@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./style.css"  />
+
+  <title>RS</title>
+</head>
+<body>
+
+  <div class="container">
+    <section class="titulo">
+      <h2>Formulário</h2>
+    </section>
+
+    <form action="https://api.sheetmonkey.io/form/mqa61hHdNSLmsCY1UBZbCU" method="post" id="form" class="form">
+      <div class="form-grupo">
+        <label for="RE">RE:</label>
+        <input type="text" id="RE" placeholder="Digite seu RE" maxlength="6" name="RE"/>
+      </div>
+      
+      <div class="form-grupo">
+        <label for="avaliacao">Selecione sua avaliação para nossa comida:</label>
+        <select id="avaliacao" name="Avaliação">
+          <option value="1- Péssimo">1 - Péssimo</option>
+          <option value="2- Ruim">2 - Ruim</option>
+          <option value="3- Bom">3 - Bom</option>
+          <option value="4- Ótimo">4 - Ótimo</option>
+          <option value="5- Excelente">5 - Excelente</option>
+        </select>
+      </div>
+
+      <div class="form-grupo">
+        <label for="dataHora">Data e Hora de Envio:</label>
+        <input type="datetime-local" id="dataHora" name="dataHora">
+      </div>
+
+
+      <button type="submit">Enviar</button>
+
+
+    </form>
+
+  </div>
+ 
+
+  <script src="./script.js"></script>
+</body>
+</html>
