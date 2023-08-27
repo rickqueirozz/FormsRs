@@ -20,15 +20,16 @@
       <h2>Formulário</h2>
     </section>
 
-    <form action="https://api.sheetmonkey.io/form/mqa61hHdNSLmsCY1UBZbCU" method="post" id="form" class="form">
+    <form action="https://api.sheetmonkey.io/form/uEH8wo153vEFqxRG8Wpof2" method="post" id="form" class="form">
       <div class="form-grupo">
         <label for="RE">RE:</label>
-        <input type="number" id="RE" placeholder="Digite seu RE" min="0" max="999999" maxlength="6" oninput="checkInputValidity(this)" name="RE"/>
+        <input type="number" id="RE" placeholder="Digite seu RE" min="0" max="999999" maxlength="6" oninput="checkInputValidity(this)" name="RE" required >
       </div>
       
       <div class="form-grupo">
         <label for="avaliacao">Selecione sua avaliação para nossa comida:</label>
-        <select id="avaliacao" name="Avaliação">
+        <select id="avaliacao" name="Avaliação" required >
+          <option value="" disabled selected hidden >Selecione uma opção</option>
           <option value="1- Péssimo">1 - Péssimo</option>
           <option value="2- Ruim">2 - Ruim</option>
           <option value="3- Bom">3 - Bom</option>
@@ -42,9 +43,7 @@
         <input type="datetime-local" id="dataHora" name="dataHora">
       </div>
 
-
       <button type="submit">Enviar</button>
-
 
     </form>
 
