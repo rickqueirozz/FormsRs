@@ -15,14 +15,4 @@ function atualizarDataHora() {
 
 atualizarDataHora();
 
-setInterval(atualizarDataHora, 60000); 
-
-function checkInputValidity(input) {
-  const value = input.value;
-  if (value.length !== 6 || !/^\d+$/.test(value)) {
-    input.setCustomValidity("Digite exatamente 6 dígitos.");
-  } 
-  else {
-    input.setCustomValidity("");
-  }
-}
+setInterval(atualizarDataHora, 60000);
